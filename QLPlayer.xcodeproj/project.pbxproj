@@ -13,6 +13,13 @@
 		77D64DB91CE072F400CE3803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D64DB71CE072F400CE3803 /* Main.storyboard */; };
 		77D64DBB1CE072F400CE3803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D64DBA1CE072F400CE3803 /* Assets.xcassets */; };
 		77D64DBE1CE072F400CE3803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D64DBC1CE072F400CE3803 /* LaunchScreen.storyboard */; };
+		77D64DC81CE0737600CE3803 /* QLMoviesPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D64DC71CE0737600CE3803 /* QLMoviesPlayer.m */; };
+		77D64DFF1CE075CF00CE3803 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77D64DFE1CE075CF00CE3803 /* Resources.bundle */; };
+		77D64E011CE0789C00CE3803 /* Cupid_高清.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 77D64E001CE0789C00CE3803 /* Cupid_高清.mp4 */; };
+		77D64E031CE07A0800CE3803 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D64E021CE07A0800CE3803 /* CoreGraphics.framework */; };
+		77D64E051CE07A1300CE3803 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D64E041CE07A1300CE3803 /* QuartzCore.framework */; };
+		77D64E071CE07A1B00CE3803 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D64E061CE07A1B00CE3803 /* CFNetwork.framework */; };
+		77D64E091CE07A6A00CE3803 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D64E081CE07A6A00CE3803 /* Reveal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,14 @@
 		77D64DBA1CE072F400CE3803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D64DBD1CE072F400CE3803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D64DBF1CE072F400CE3803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D64DC61CE0737600CE3803 /* QLMoviesPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLMoviesPlayer.h; sourceTree = "<group>"; };
+		77D64DC71CE0737600CE3803 /* QLMoviesPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLMoviesPlayer.m; sourceTree = "<group>"; };
+		77D64DFE1CE075CF00CE3803 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		77D64E001CE0789C00CE3803 /* Cupid_高清.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cupid_高清.mp4"; sourceTree = "<group>"; };
+		77D64E021CE07A0800CE3803 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		77D64E041CE07A1300CE3803 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		77D64E061CE07A1B00CE3803 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		77D64E081CE07A6A00CE3803 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D64E071CE07A1B00CE3803 /* CFNetwork.framework in Frameworks */,
+				77D64E051CE07A1300CE3803 /* QuartzCore.framework in Frameworks */,
+				77D64E031CE07A0800CE3803 /* CoreGraphics.framework in Frameworks */,
+				77D64E091CE07A6A00CE3803 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,11 @@
 		77D64DA21CE072F400CE3803 = {
 			isa = PBXGroup;
 			children = (
+				77D64E081CE07A6A00CE3803 /* Reveal.framework */,
+				77D64E061CE07A1B00CE3803 /* CFNetwork.framework */,
+				77D64E041CE07A1300CE3803 /* QuartzCore.framework */,
+				77D64E021CE07A0800CE3803 /* CoreGraphics.framework */,
+				77D64DC51CE0734F00CE3803 /* QLMoviesPlayer */,
 				77D64DAD1CE072F400CE3803 /* QLPlayer */,
 				77D64DAC1CE072F400CE3803 /* Products */,
 			);
@@ -60,6 +84,7 @@
 			children = (
 				77D64DB11CE072F400CE3803 /* AppDelegate.h */,
 				77D64DB21CE072F400CE3803 /* AppDelegate.m */,
+				77D64E001CE0789C00CE3803 /* Cupid_高清.mp4 */,
 				77D64DB41CE072F400CE3803 /* ViewController.h */,
 				77D64DB51CE072F400CE3803 /* ViewController.m */,
 				77D64DB71CE072F400CE3803 /* Main.storyboard */,
@@ -77,6 +102,16 @@
 				77D64DAF1CE072F400CE3803 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77D64DC51CE0734F00CE3803 /* QLMoviesPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				77D64DFE1CE075CF00CE3803 /* Resources.bundle */,
+				77D64DC61CE0737600CE3803 /* QLMoviesPlayer.h */,
+				77D64DC71CE0737600CE3803 /* QLMoviesPlayer.m */,
+			);
+			path = QLMoviesPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,11 +140,13 @@
 		77D64DA31CE072F400CE3803 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QL;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = LongQuan;
 				TargetAttributes = {
 					77D64DAA1CE072F400CE3803 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5SF7U9RCF7;
 					};
 				};
 			};
@@ -138,7 +175,9 @@
 			files = (
 				77D64DBE1CE072F400CE3803 /* LaunchScreen.storyboard in Resources */,
 				77D64DBB1CE072F400CE3803 /* Assets.xcassets in Resources */,
+				77D64DFF1CE075CF00CE3803 /* Resources.bundle in Resources */,
 				77D64DB91CE072F400CE3803 /* Main.storyboard in Resources */,
+				77D64E011CE0789C00CE3803 /* Cupid_高清.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D64DC81CE0737600CE3803 /* QLMoviesPlayer.m in Sources */,
 				77D64DB61CE072F400CE3803 /* ViewController.m in Sources */,
 				77D64DB31CE072F400CE3803 /* AppDelegate.m in Sources */,
 				77D64DB01CE072F400CE3803 /* main.m in Sources */,
@@ -263,10 +303,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QLPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhouquanlong.www.QLPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QLPlayer.www.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +322,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QLPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhouquanlong.www.QLPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QLPlayer.www.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

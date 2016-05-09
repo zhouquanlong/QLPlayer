@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "QLMoviesPlayer.h"
+
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController ()
 
@@ -16,12 +20,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    QLMoviesPlayer *meviesPlay = [[QLMoviesPlayer alloc]init];
+    
+//    meviesPlay.backgroundColor = [UIColor orangeColor];
+    
+    meviesPlay.frame = CGRectMake(0, 100, SCREENW, SCREENW/16 *9 + 40);
+    [self.view addSubview:meviesPlay];
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Cupid_高清.mp4" withExtension:nil];
+    [meviesPlay playVideoWithUrl:url];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//
+// // 在子线程中调用download方法下载图片
+////    [self performSelectorInBackground:@selector(download) withObject:nil];
+//
+//
+//    NSThread *thread = [NSThread currentThread];
+//    NSLog(@"%@",thread);
+//
+//    [self performSelector:@selector(download:) onThread:thread withObject:self waitUntilDone:YES];
+//
+//}
+//
+//-(void)download:(NSString *)str
+//{
+//
+//   NSThread *thread = [NSThread currentThread];
+//    NSLog(@"%@",thread);
+//}
+
 
 @end
